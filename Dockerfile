@@ -9,6 +9,15 @@ COPY nginx.conf /etc/nginx/nginx.conf
 RUN mkdir -p /app
 COPY . /app
 
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip
+    
 RUN docker-php-ext-install pdo pdo_mysql sockets
 
 RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar && mv composer.phar /usr/local/bin/composer"
