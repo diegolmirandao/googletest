@@ -7,11 +7,11 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     zip \
-    unzip
+    unzip \
+    nginx \
+    wget
 
 RUN docker-php-ext-install pdo pdo_mysql sockets
-
-RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
 
