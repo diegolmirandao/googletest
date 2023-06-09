@@ -19,8 +19,8 @@ return [
     'central_domains' => [
         '127.0.0.1',
         'localhost',
-        'cadi.dev',
-        'cadi.app',
+        'api.cadi.dev',
+        'api.cadi.app',
     ],
 
     /**
