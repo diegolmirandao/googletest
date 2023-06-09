@@ -21,6 +21,7 @@ return [
         'localhost',
         'api.cadi.dev',
         'api.cadi.app',
+        'googletest-v3al6vlgda-uc.a.run.app'
     ],
 
     /**
